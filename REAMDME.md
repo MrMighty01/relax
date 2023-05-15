@@ -1,1 +1,0 @@
-Lokah Samastha Sugino Bavanthu
