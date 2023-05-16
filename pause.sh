@@ -2,9 +2,9 @@
 
 id=$(pgrep -f "relax.sh")
 
-state=$(ps -p $id -o state=) 
+current_state=$(ps -p "$id" -o state=) 
 
-if [ "$state" == "T" ]; then 
+if [ "$current_state" == "T" ]; then 
 	kill -SIGCONT $id 
 	echo "The script has been Resumed"
 else 
