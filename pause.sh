@@ -12,7 +12,7 @@ if [ "$current_state" == "T" ]; then
 	notify-send "The script has been Resumed"
 else 
 	kill -SIGSTOP "$idmon"
-	PID=$(pgrep -f "paplay .*/yt/relax2020/completed/convey.wav")
+	PID=$(pgrep -f "paplay .*/convey.wav")
 	kill "$PID"
 
 	kill -SIGSTOP "$id"
